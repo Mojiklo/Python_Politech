@@ -6,8 +6,8 @@ number_of_lines = 50
 number_of_characters = 25
 symbol_weight = 4
 
-book_bait = number_of_pages * number_of_lines * number_of_characters * symbol_weight
-book_mb = (book_bait) / (1024*1024)
+book_byte = number_of_pages * number_of_lines * number_of_characters * symbol_weight
+book_mb = book_byte / (1024*1024)
 
 cound_books = int(volume / book_mb + 0.9999999)
 print("Количество книг, помещающихся на дискету:", cound_books)

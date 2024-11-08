@@ -2,14 +2,14 @@
 
 def count_letters(text):
     lower_text = text.lower()
-    list = {}
+    letter_counts = {}
     for letter in lower_text:
         if letter.isalpha():
-            if letter in list:
-                list[letter] += 1
+            if letter in letter_counts:
+                letter_counts[letter] += 1
             else:
-                list[letter] = 1
-    return list
+                letter_counts[letter] = 1
+    return letter_counts
 
 # TODO Напишите функцию calculate_frequency
 

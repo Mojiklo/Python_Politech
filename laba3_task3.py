@@ -3,22 +3,26 @@
 def count_letters(text):
     lower_text = text.lower()
     list = {}
-    for i in lower_text:
-        if i.isalpha():
-            if i in list:
-                list[i] += 1
-            else: list[i] = 1
+    for letter in lower_text:
+        if letter.isalpha():
+            if letter in list:
+                list[letter] += 1
+            else:
+                list[letter] = 1
     return list
 
 # TODO Напишите функцию calculate_frequency
 
-def calculate_frequency(dictionary):
-    frequency={}
-    total = sum(dictionary.values())
 
-    for letter, count in dictionary.items():
-        frequency[letter] = round(count / total, 2)
-    return frequency
+def calculate_frequency(letter):
+    letter_frequencies = {}
+    total = sum(letter.values())
+
+    for letter, count in letter.items():
+        letter_frequencies[letter] = count / total
+
+    return letter_frequencies
+
 
 main_str = """
 У лукоморья дуб зелёный;

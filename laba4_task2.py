@@ -2,6 +2,7 @@ import json
 
 INPUT_FILE = "input.json"
 
+
 def task() -> float:
     try:
         with open(INPUT_FILE, "r") as input_file:
